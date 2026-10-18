@@ -1,13 +1,14 @@
 {
- "updated": "2026-10-18T10:09:21.007Z",
+ "updated": "2026-10-18T10:28:46.341Z",
  "departments": [
   {
-   "college": "كلية القانون",
    "dept": "القانون",
+   "college": "كلية القانون",
    "morning": 67.5,
-   "evening": 64.5,
    "feeMorning": 2000000,
+   "evening": null,
    "feeEvening": null,
+   "noEvening": true,
    "streams": [
     "أحيائي",
     "تطبيقي",
