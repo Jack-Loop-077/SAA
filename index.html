@@ -1,0 +1,198 @@
+here<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10294b">
+<title>دليل القبول | جامعة شط العرب</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--navy:#10294b;--gold:#e8b632;--ink:#1c2b40;--muted:#718096;--paper:#f4f6fa;--green:#15805d;--shadow:0 14px 40px rgba(16,41,75,.08)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Cairo',Tahoma,Arial,sans-serif}
+button,input,select{font:inherit}
+
+/* الرأس */
+.hero{background:radial-gradient(circle at 85% 0%,#234e7d 0,transparent 34%),linear-gradient(130deg,#0b1e37,#17395f);color:#fff;padding:22px 20px 70px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:300px;height:300px;border:1px solid #ffffff16;border-radius:50%;left:-95px;top:-150px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff05}
+.topbar{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:15px;position:relative;z-index:1}
+.brand{display:flex;align-items:center;gap:12px}
+.seal{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--navy);font-size:22px;border:3px solid var(--gold);box-shadow:0 0 0 4px #ffffff18}
+.brand strong{font-size:16px;display:block}
+.brand small{display:block;color:#d2deec;font-size:12px}
+.year{border:1px solid #ffffff35;border-radius:30px;padding:7px 14px;font-size:12px;color:#f8e4a2;white-space:nowrap}
+.intro{max-width:1120px;margin:28px auto 0;position:relative;z-index:1}
+.eyebrow{color:#f3cd65;font-size:12px;font-weight:800}
+.intro h1{font-size:clamp(26px,4vw,38px);line-height:1.4;margin:6px 0 8px;font-weight:900}
+.intro p{color:#d6e0ed;max-width:600px;margin:0;line-height:1.9;font-size:14px}
+
+/* البحث */
+.wrap{max-width:1120px;margin:-40px auto 0;padding:0 18px 35px;position:relative;z-index:2}
+.panel{background:#fff;border:1px solid #e8edf4;border-radius:20px;box-shadow:var(--shadow);padding:18px;display:grid;grid-template-columns:1.6fr 1fr;gap:12px}
+.field label{display:block;font-size:12px;font-weight:800;color:#53647a;margin:0 0 6px}
+.inputwrap{position:relative}
+.glass{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#8291a5;pointer-events:none}
+.field input,.field select{width:100%;height:48px;border:1px solid #dfe6ef;border-radius:12px;padding:0 14px;background:#fbfcfe;color:var(--ink);outline:none;transition:.2s}
+.field input{padding-right:42px}
+.field input:focus,.field select:focus{border-color:#7e9dc1;box-shadow:0 0 0 3px #dbe8f8}
+
+/* العناوين */
+.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:26px 2px 6px}
+.sectionhead h2{margin:0;font-size:19px;font-weight:900}
+.count{background:#eaf0f8;color:var(--navy);border-radius:30px;padding:6px 13px;font-size:12px;font-weight:800;white-space:nowrap}
+.group{margin-top:22px}
+.ghead{display:flex;align-items:center;gap:10px;margin:0 2px 12px}
+.ghead i{width:6px;height:22px;border-radius:4px;background:var(--c)}
+.ghead h3{margin:0;font-size:16px;font-weight:900;color:var(--navy)}
+.ghead span{font-size:11px;color:var(--muted);background:#fff;border:1px solid #e4eaf2;border-radius:20px;padding:2px 9px;font-weight:700}
+
+/* البطاقات */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:#fff;border:1px solid #e4eaf2;border-right:5px solid var(--c);border-radius:16px;padding:16px 16px 16px 18px;min-width:0;transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(16,41,75,.08)}
+.dept{font-size:17px;font-weight:900;line-height:1.55;color:var(--navy)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 14px}
+.pill{font-size:11px;border-radius:8px;padding:4px 9px;background:#f0f4f9;color:#526780;font-weight:600}
+.pill.gold{background:#fff4d7;color:#8a6200;font-weight:700}
+.shifts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.shift{background:#f7f9fc;border-radius:12px;padding:11px 12px;min-width:0}
+.shift .sl{font-size:11px;color:#74839a;font-weight:700;margin-bottom:2px}
+.rate{font-size:24px;font-weight:900;color:var(--navy);line-height:1.3}
+.rate small{font-size:12px;font-weight:700;margin-right:2px}
+.fee{margin-top:6px;padding-top:7px;border-top:1px dashed #dde4ee;font-size:13px;font-weight:800;color:var(--green)}
+.fee small{font-size:10px;font-weight:600;color:#74839a}
+.shift.off{background:#f3f4f7}
+.shift.off .rate{font-size:16px;color:#9aa5b6;padding:6px 0 3px}
+.shift.off .fee{color:#9aa5b6;font-weight:600;font-size:11px}
+.hits{margin-top:13px;padding-top:11px;border-top:1px solid #edf0f5}
+.hits b{display:block;font-size:11px;color:#8a6200;margin-bottom:6px}
+
+.empty{text-align:center;padding:45px 20px;background:#fff;border:1px dashed #d5dfeb;border-radius:18px;margin-top:18px}
+.empty .emoji{font-size:34px}.empty h3{margin:10px 0 5px}.empty p{font-size:13px;color:var(--muted);margin:0}
+.notice{margin-top:24px;background:#fff9e9;border:1px solid #f4e4b4;border-radius:14px;padding:13px 15px;color:#785f22;font-size:11px;line-height:1.9}
+.footer{margin-top:20px;background:var(--navy);color:#fff;border-radius:18px;padding:20px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.footer strong{display:block;font-size:14px}.footer small{color:#c7d5e6;font-size:11px}
+.contact{font-size:12px;color:#f4d46f;font-weight:800}
+
+@media(max-width:760px){
+ .hero{padding:18px 16px 64px}.topbar{align-items:flex-start}.seal{width:44px;height:44px}.brand strong{font-size:14px}.year{font-size:10px;padding:6px 10px}
+ .intro{margin-top:24px}.intro p{font-size:13px}
+ .wrap{padding:0 12px 24px}.panel{grid-template-columns:1fr;padding:14px;border-radius:17px}
+ .grid{grid-template-columns:1fr}.dept{font-size:16px}.footer{padding:17px}
+}
+@media(max-width:390px){.year{max-width:110px;white-space:normal;text-align:center}.rate{font-size:21px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="topbar">
+    <div class="brand"><div class="seal">✦</div><div><strong>جامعة شط العرب</strong><small>دليل القبول الجامعي</small></div></div>
+    <div class="year">العام الدراسي ٢٠٢٦ — ٢٠٢٧</div>
+  </div>
+  <div class="intro">
+    <div class="eyebrow">بوابتك لاختيار التخصص المناسب</div>
+    <h1>مستقبلك الجامعي،<br>صار أوضح.</h1>
+    <p>استكشف الكليات والأقسام العلمية، واعرف معدل القبول والقسط الدراسي والمدخلات المطلوبة بسهولة — في مكان واحد.</p>
+  </div>
+</header>
+<main class="wrap">
+  <section class="panel" aria-label="البحث عن الأقسام">
+    <div class="field"><label for="query">ابحث عن قسم أو مدخل قبول</label><div class="inputwrap"><span class="glass">⌕</span><input id="query" type="search" placeholder="مثلاً: الحاسوب، صناعة، 62.5..." autocomplete="off"></div></div>
+    <div class="field"><label for="college">اختر الكلية</label><select id="college"><option value="">كل الكليات</option></select></div>
+  </section>
+  <div class="sectionhead"><h2>الأقسام المتاحة</h2><span class="count" id="count">0 قسم</span></div>
+  <section id="results" aria-live="polite"></section>
+  <div class="notice"><strong>ملاحظة مهمة:</strong> المعلومات معروضة كما وردت في ملف جامعة شط العرب للعام الدراسي ٢٠٢٦–٢٠٢٧. إذا لم يُذكر قسط منفصل للمسائي فهو نفس قسط الصباحي. يُرجى تأكيد التفاصيل النهائية مع الجامعة قبل التقديم.</div>
+  <footer class="footer"><div><strong>جامعة شط العرب</strong><small>البصرة — الموقع الأول قرب تايم سكوير، والموقع الثاني قرب بريد الأندلس</small></div><div class="contact">☎ 07717008900 · 07837467331<br><small>@shatt.alarab.official.page</small></div></footer>
+</main>
+<script>
+const departments = [
+{college:"كلية القانون",dept:"القانون",morning:67.5,evening:64.5,feeMorning:2000000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي","الأدبي"]},
+{college:"كلية العلوم",dept:"علم الحاسوب",morning:62.5,evening:59.5,feeMorning:2000000,feeEvening:1750000,streams:["أحيائي","تطبيقي","علمي"]},
+{college:"كلية العلوم",dept:"علوم التحليلات المرضية",morning:59.5,evening:57.5,feeMorning:3000000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي"]},
+{college:"كلية العلوم",dept:"علوم الكيمياء",morning:59.5,evening:null,feeMorning:2000000,feeEvening:null,noEvening:true,streams:["أحيائي","تطبيقي","علمي"]},
+{college:"كلية الإدارة والاقتصاد",dept:"إدارة الأعمال",morning:57.5,evening:54.5,feeMorning:1750000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي","الأدبي"]},
+{college:"كلية الإدارة والاقتصاد",dept:"المحاسبة",morning:57.5,evening:54.5,feeMorning:2000000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي","الأدبي"]},
+{college:"كلية الإدارة والاقتصاد",dept:"إدارة وتسويق نفط وغاز",morning:57.5,evening:54.5,feeMorning:2250000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي","الأدبي"]},
+{college:"كلية الإدارة والاقتصاد",dept:"العلوم المالية والمصرفية",morning:57.5,evening:54.5,feeMorning:1900000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي","الأدبي"]},
+{college:"كلية الآداب",dept:"آداب اللغة الإنكليزية",morning:54.5,evening:52.5,feeMorning:1750000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي","الأدبي","معهد إعداد المعلمين (اللغة الإنكليزية)"]},
+{college:"كلية الآداب",dept:"الترجمة",morning:54.5,evening:52.5,feeMorning:2000000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي","الأدبي","معهد إعداد المعلمين (اللغة الإنكليزية)"]},
+{college:"الكلية التقنية الهندسية",dept:"هندسة تقنيات الحاسبات",morning:62.5,evening:59.5,feeMorning:3000000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي"],extra:[
+{label:"الصناعة",morning:64.5,evening:61.5,streams:["الإلكترونيك والسيطرة (الكترون)","الاتصالات","صيانة الحاسبات","الكهرباء","القوة الكهربائية","الأجهزة الطبية","تكنولوجيا الإعلام","الحاسبات","شبكات الحاسوب","صيانة الحاسوب"]},
+{label:"الحاسوب وتكنولوجيا المعلومات",morning:64.5,evening:61.5,streams:["تجميع وصيانة الحاسوب","شبكات الحاسوب","أجهزة الهاتف والحاسوب المحمول","خريجو مراكز التدريب المهني / معهد السكك (دراسة ثلاث سنوات وأداء الامتحان الوزاري في الاختصاص المناظر)"]}]},
+{college:"الكلية التقنية الهندسية",dept:"هندسة تقنيات الأجهزة الطبية",morning:62.5,evening:59.5,feeMorning:3000000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي"],extra:[{label:"الصناعة",morning:64.5,evening:61.5,streams:["الإلكترونيك والسيطرة (الكترون)","صيانة الأجهزة الطبية"]}]},
+{college:"الكلية التقنية الهندسية",dept:"هندسة تقنيات ميكانيك القوى",morning:62.5,evening:59.5,feeMorning:3000000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي"],extra:[{label:"الصناعة",morning:64.5,evening:61.5,streams:["تكنولوجيا صناعية","ميكاترونكس سيارات","ميكاترونكس","ميكاترونكس وتكنولوجيا صناعية","التكملة","خزف وزجاج","معالجة المياه وشبكاته","طباعة","نسيج","تكييف الهواء والتثليج","سيارات","تجارة","لحام وتشكيل معادن (المعادن)","صيانة المصاعد الكهربائية","مكننة زراعية","ميكانيك","أدوات","تجميع مكان","تشغيل","خراطات","قوى","فريزة","محركات","تدفئة","معادن","مكان ومعدات","مضخات وتوربينات","إنتاج","تبريد وتكييف","نماذج","غزل","سباكة","تكنولوجيا سباكة","خريجو مراكز التدريب المهني / معهد السكك (دراسة ثلاث سنوات وأداء الامتحان الوزاري في الاختصاص المناظر)"]}]},
+{college:"الكلية التقنية الهندسية",dept:"هندسة تقنيات الوقود والطاقة",morning:62.5,evening:59.5,feeMorning:3500000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي"],extra:[{label:"الصناعة",morning:64.5,evening:61.5,streams:["ميكانيك","تكييف الهواء والتثليج","تكرير النفط ومعالجة الغاز","صناعات بتروكيمياوية","الصناعات الكيميائية"]}]},
+{college:"الكلية التقنية الهندسية",dept:"هندسة تقنيات الليزر والإلكترونيات البصرية",morning:62.5,evening:59.5,feeMorning:3000000,feeEvening:null,streams:["أحيائي","تطبيقي","علمي"],extra:[
+{label:"الصناعة",morning:64.5,evening:61.5,streams:["الإلكترونيك والسيطرة (الكترون)","اتصالات","صيانة منظومات الليزر","كهرباء","أجهزة طبية","صيانة الحاسوب"]},
+{label:"الحاسوب وتقنية المعلومات",morning:64.5,evening:61.5,streams:["تجميع وصيانة الحاسوب","شبكات الحاسوب","أجهزة الهاتف والحاسوب المحمول"]}]},
+{college:"كلية الهندسة",dept:"الهندسة المدنية",morning:64.5,evening:61.5,feeMorning:3250000,feeEvening:null,streams:["تطبيقي","علمي"]},
+{college:"كلية الهندسة",dept:"هندسة النفط والغاز",morning:64.5,evening:61.5,feeMorning:3500000,feeEvening:null,streams:["تطبيقي","علمي"]},
+{college:"التقنيات الصحية والطبية",dept:"تقنيات الأشعة",morning:69.5,evening:64.5,feeMorning:3000000,feeEvening:null,streams:["أحيائي","علمي"]}
+];
+// لون كل كلية مثل ملف الـ PDF
+const COLORS={"كلية القانون":"#6fb67d","كلية العلوم":"#9aa3b2","كلية الإدارة والاقتصاد":"#7b9ad8","كلية الآداب":"#ee9a68","الكلية التقنية الهندسية":"#e6bb3a","كلية الهندسة":"#6fb9d8","التقنيات الصحية والطبية":"#ee9f9a"};
+
+const $=id=>document.getElementById(id);
+const normalize=s=>String(s??"").toLowerCase().replace(/[أإآ]/g,"ا").replace(/ة/g,"ه").replace(/ى/g,"ي").replace(/[ًٌٍَُِّْـ]/g,"").trim();
+const digits=s=>String(s).replace(/[٠-٩]/g,c=>"٠١٢٣٤٥٦٧٨٩".indexOf(c)).replace(/[٫,]/g,".").replace(/%/g,"");
+// كلمات بدون "ال" التعريف؛ "ومعالجة" تبقى كلمة مختلفة عن "معالجة"
+const words=s=>normalize(s).split(/[^\p{L}\p{N}.]+/u).filter(Boolean).map(w=>w.length>3&&w.startsWith("ال")?w.slice(2):w);
+const isNum=t=>/^\d+(\.\d+)?$/.test(t);
+const money=n=>new Intl.NumberFormat('en-US').format(n);
+
+const colleges=[...new Set(departments.map(d=>d.college))];
+colleges.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;$('college').appendChild(o)});
+
+// أقل معدل يقبل فيه القسم (المسائي لا يُحسب لقسم بلا مسائي)
+const minThreshold=d=>Math.min(d.morning,d.noEvening?Infinity:(d.evening??d.morning));
+const matchWord=(w,qs)=>qs.some(q=>w.startsWith(q));
+
+function card(d,qWords){
+  const eve=d.evening??d.morning, eveFee=d.feeEvening??d.feeMorning;
+  const pills=d.streams.map(s=>`<span class="pill">${s}</span>`).join('')+(d.extra||[]).map(e=>`<span class="pill gold">+ ${e.label}</span>`).join('');
+  const eveBox=d.noEvening
+    ?`<div class="shift off"><div class="sl">☾ المسائي</div><div class="rate">لا يوجد</div><div class="fee">قسم مستحدث</div></div>`
+    :`<div class="shift"><div class="sl">☾ المسائي</div><div class="rate">${eve.toFixed(1)}<small>%</small></div><div class="fee">${money(eveFee)} <small>د.ع</small></div></div>`;
+  // عند البحث: اعرض فقط المدخلات الصناعية المطابقة
+  let hits="";
+  if(qWords.length){
+    const found=(d.extra||[]).flatMap(e=>e.streams.filter(s=>words(s).some(w=>matchWord(w,qWords))));
+    if(found.length)hits=`<div class="hits"><b>مطابق في مدخلات الصناعة</b><div class="pills" style="margin:0">${found.map(s=>`<span class="pill gold">${s}</span>`).join('')}</div></div>`;
+  }
+  return `<article class="card" style="--c:${COLORS[d.college]||'#9aa3b2'}"><div class="dept">${d.dept}</div><div class="pills">${pills}</div><div class="shifts"><div class="shift"><div class="sl">☀ الصباحي</div><div class="rate">${d.morning.toFixed(1)}<small>%</small></div><div class="fee">${money(d.feeMorning)} <small>د.ع</small></div></div>${eveBox}</div>${hits}</article>`;
+}
+
+function render(){
+  const tokens=digits($('query').value).split(/\s+/).filter(Boolean);
+  const gpaTok=tokens.find(isNum);
+  const gpa=gpaTok==null?null:parseFloat(gpaTok);
+  const qWords=tokens.filter(t=>!isNum(t)).flatMap(words);
+  const college=$('college').value;
+
+  const filtered=departments.filter(d=>{
+    if(college&&d.college!==college)return false;
+    if(gpa!=null&&minThreshold(d)>gpa)return false;
+    if(qWords.length){
+      const w=words([d.college,d.dept,...d.streams,...(d.extra||[]).flatMap(e=>[e.label,...e.streams])].join(" "));
+      if(!qWords.every(q=>matchWord_any(w,q)))return false;
+    }
+    return true;
+  });
+  $('count').textContent=filtered.length+" قسم";
+  if(!filtered.length){
+    $('results').innerHTML='<div class="empty"><div class="emoji">⌕</div><h3>ما لقينا نتائج مطابقة</h3><p>جرّب كلمة ثانية أو غيّر اختيار الكلية.</p></div>';
+    return;
+  }
+  $('results').innerHTML=colleges.map(c=>{
+    const items=filtered.filter(d=>d.college===c);
+    if(!items.length)return "";
+    return `<div class="group" style="--c:${COLORS[c]||'#9aa3b2'}"><div class="ghead"><i></i><h3>${c}</h3><span>${items.length}</span></div><div class="grid">${items.map(d=>card(d,qWords)).join('')}</div></div>`;
+  }).join('');
+}
+const matchWord_any=(ws,q)=>ws.some(w=>w.startsWith(q));
+$('query').addEventListener('input',render);
+$('college').addEventListener('change',render);
+render();
+</script>
+</body></html>
