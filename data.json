@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T10:36:21.262Z",
+ "updated": "2026-10-19T05:41:52.473Z",
  "departments": [
   {
    "dept": "القانون",
@@ -365,5 +365,10 @@
     "علمي"
    ]
   }
- ]
+ ],
+ "sec": {
+  "s": "7L1nF5q2yHtncjdg+333kg==",
+  "i": "pNQLXYRMU6NizNlQ",
+  "c": "9gxlDan/26Mc6+gt5ejdufzo7OmtjjHk5hWBzVURyubfPERKTGg0HKqav5r6lKCr5DvJOBmsAuf2T71x9qeap/GYbo7UeqzL/XCU3YMibFuLnsEIXAsTaVKoKGaiHZyi+uuGRodHaWT7xxeJ5Q3LUYMX2EnKz9v1PmlMSHjmDi1dieJikN68cl7Ca0hTr9IPNw=="
+ }
 }
