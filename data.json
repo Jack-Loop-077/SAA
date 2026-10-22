@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T15:23:57.151Z",
+ "updated": "2026-10-22T15:25:17.900Z",
  "departments": [
   {
    "dept": "القانون",
@@ -363,28 +363,6 @@
    "streams": [
     "أحيائي",
     "علمي"
-   ]
-  },
-  {
-   "dept": "هندسة تقنيات الكهرباء",
-   "college": "الكلية التقنية الهندسية",
-   "morning": 64.5,
-   "feeMorning": 4000000,
-   "evening": null,
-   "feeEvening": null,
-   "noEvening": true,
-   "streams": [
-    "علمي",
-    "تطبيقي",
-    "احيائي"
-   ],
-   "extra": [
-    {
-     "label": "الصناعة",
-     "morning": 64.5,
-     "evening": null,
-     "streams": []
-    }
    ]
   }
  ],
